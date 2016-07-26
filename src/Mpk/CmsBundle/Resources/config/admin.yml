@@ -1,0 +1,12 @@
+services:
+    mpk_cms.admin.post:
+        class: Mpk\CmsBundle\Admin\PostAdmin
+        arguments: [~, Mpk\CmsBundle\Entity\Post, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Post}
+
+    mpk_cms.admin.category:
+        class: Mpk\CmsBundle\Admin\CategoryAdmin
+        arguments: [~, Mpk\CmsBundle\Entity\Category, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Category}

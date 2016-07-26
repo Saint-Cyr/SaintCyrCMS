@@ -1,0 +1,38 @@
+<!-- Start  Logo & Naviagtion  -->
+      <div class="navbar navbar-default navbar-top">
+        <div class="container">
+          <div class="navbar-header">
+            <!-- Stat Toggle Nav Link For Mobiles -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <i class="fa fa-bars"></i>
+            </button>
+            <!-- End Toggle Nav Link For Mobiles -->
+            <a class="navbar-brand" href="index.html">
+              <img alt="" src="{{ asset('bundles/mpkcms/images/logo.png') }}">
+            </a>
+          </div>
+          <div class="navbar-collapse collapse">
+            
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a class="active" href="{{ path('mpk_cms_homepage') }}">Home</a>
+                
+              </li>
+              <li>
+                <a href="{{ path('mpk_cms_single_page', {'id':1}) }}">About us</a>
+                
+              </li>
+              <li>
+                <a href="{{ path('mpk_cms_services') }}">Services</a>
+                
+              </li>
+              <li>
+                <a href="{{ path('mpk_cms_single_page', {'id':1}) }}">Item 5</a>
+                
+              </li>
+              <li><a href="{{ path('mpk_cms_contact') }}">Contact</a>
+              </li>
+            </ul>
+            <!-- End Navigation List -->
+          </div>
+        </div>

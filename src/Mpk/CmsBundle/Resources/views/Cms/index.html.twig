@@ -1,0 +1,130 @@
+{% extends "MpkCmsBundle::layout.html.twig" %}
+{% block content %}
+    <!-- Start Home Page Slider -->
+    <section id="home">
+      <!-- Carousel -->
+      <div id="main-slide" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#main-slide" data-slide-to="0" class="active"></li>
+          <li data-target="#main-slide" data-slide-to="1"></li>
+          <li data-target="#main-slide" data-slide-to="2"></li>
+        </ol>
+        <!--/ Indicators end-->
+
+        <!-- Carousel inner -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img class="img-responsive" src="{{ asset('images/slider/bg1.jpg') }}" alt="slider">
+            <div class="slider-content">
+              <div class="col-md-12 text-center">
+                <h2 class="animated2">
+                    <span>Welcome to <strong>Margo</strong></span>
+                </h2>
+                <h3 class="animated3">
+                    <span style="color: white;">Short description of the slide image 1</span>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <!--/ Carousel item end -->
+          <div class="item">
+            <img class="img-responsive" src="{{ asset('images/slider/bg2.jpg') }}" alt="slider">
+            <div class="slider-content">
+              <div class="col-md-12 text-center">
+                <h2 class="animated4">
+                    
+                    </h2>
+                <h3 class="animated3">
+                    <span style="color: white;">Short description of the slide image 2</span>
+                </h3>
+                <p class="animated6"><a href="#" class="slider btn btn-system btn-large">Learn more</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img class="img-responsive" src="{{ asset('images/slider/bg2.jpg') }}" alt="slider">
+            <div class="slider-content">
+              <div class="col-md-12 text-center">
+                <h2 class="animated4">
+                    
+                    </h2>
+                <h3 class="animated3">
+                    <span style="color: white;">Short description of the slide image 3</span>
+                </h3>
+                <p class="animated6"><a href="#" class="slider btn btn-system btn-large">Learn more</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--/ Carousel item end -->
+          
+          <!--/ Carousel item end -->
+        </div>
+        <!-- Carousel inner end-->
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#main-slide" data-slide="prev">
+          <span><i class="fa fa-angle-left"></i></span>
+        </a>
+        <a class="right carousel-control" href="#main-slide" data-slide="next">
+          <span><i class="fa fa-angle-right"></i></span>
+        </a>
+      </div>
+      <!-- /carousel -->
+    </section>
+    <!-- End Home Page Slider -->
+
+
+    <!-- Start Services Section -->
+    <div class="section service">
+      <div class="container">
+        <div class="row">
+          <!-- Start Service Icon 1 -->
+          <div class="col-md-4 col-sm-7 service-box service-center" data-animation="fadeIn" data-animation-delay="01">
+            <div class="service-icon">
+              <i class="fa fa-leaf icon-large"></i>
+            </div>
+            <div class="service-content">
+              <h4>High Quality Theme</h4>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat Lorem pariatur</p>
+            </div>
+          </div>
+          <!-- End Service Icon 1 -->
+
+          <!-- Start Service Icon 2 -->
+          <div class="col-md-4 col-sm-7 service-box service-center" data-animation="fadeIn" data-animation-delay="02">
+            <div class="service-icon">
+              <i class="fa fa-desktop icon-large"></i>
+            </div>
+            <div class="service-content">
+              <h4>Full Responsive</h4>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat Lorem pariatur</p>
+            </div>
+          </div>
+          <!-- End Service Icon 2 -->
+
+          <!-- Start Service Icon 3 -->
+          <div class="col-md-4 col-sm-7 service-box service-center" data-animation="fadeIn" data-animation-delay="03">
+            <div class="service-icon">
+              <i class="fa fa-eye icon-large"></i>
+            </div>
+            <div class="service-content">
+              <h4>Retina Display Ready</h4>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat Lorem pariatur</p>
+            </div>
+          </div>
+          <!-- End Service Icon 3 -->
+
+         
+
+        </div>
+        <!-- .row -->
+      </div>
+      <!-- .container -->
+    </div>
+    <!-- End Services Section -->
+
+{% endblock %}
